@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Password Validation Checker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/src/styles/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="#">
+            <label for="password">Password Validation Checker</label>
+            <input type="password" id="password" name="password" pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\!\"\§\$\%\&\/\|\(\)\=\?\´\`\*\+\-\_\#\.\:\,\;\@\~\€\^\°\<\>\\]).{8,}' required>
+        </form>
+    </div>
+
+    <div id="validatorCheck">
+        <h2>Password must meet the following criteria:</h2>
+        <div>
+            <p id="letter" class="invalid">Minimum one 'lowercase' letter</p>
+        </div>
+        <div>
+            <p id="capital" class="invalid">Minimum one 'uppercase' letter</p>
+        </div>
+        <div>
+            <p id="number" class="invalid">Minimum one 'number'</p>
+        </div>
+        <div>
+            <p id="special_character" class="invalid">Minimum one 'special character'</p>
+        </div>
+        <div>
+            <p id="length" class="invalid">Minimum '8 characters'</p>
+        </div>
+    </div>
+    <script src="/src/scripts/script.js"></script>
+
+</body>
+
+</html>

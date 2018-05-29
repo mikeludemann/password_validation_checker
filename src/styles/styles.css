@@ -1,0 +1,63 @@
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+
+label {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.container {
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+#validatorCheck {
+    display: none;
+    background: #fafafa;
+    color: #000;
+    position: relative;
+    padding: 10px 20px;
+    margin-top: 0px;
+    transition: all 1s;
+    border-top: 1px solid #fff;
+}
+
+#validatorCheck div {
+    padding: 5px 35px;
+}
+
+#validatorCheck div p {
+    text-align: left;
+    margin-left: -15px;
+    word-wrap: break-word;
+
+    /*word-break: break-all;*/
+}
+
+.valid {
+    color: green;
+    font-weight: bold;
+}
+
+.valid:before {
+    position: relative;
+    left: -20px;
+    content: "√";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -20px;
+    content: "X";
+}
